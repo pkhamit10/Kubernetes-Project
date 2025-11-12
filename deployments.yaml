@@ -10,13 +10,15 @@ spec:
   selector: 
     matchLabels:
       app: myapp
+      type: front-end
   template:
     metadata:
       name: nginx-pk
       labels:
         app: myapp
+        type: front-end
     spec:
       containers:
       - name: myapp-container
-        image: nginx:1.23
+        image: nginx
         
